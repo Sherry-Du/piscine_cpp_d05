@@ -5,6 +5,11 @@ Character::Character(std::string const& name, int lvl) : Range(CLOSE), _name(nam
     std::cout << _name << " Created" << std::endl;
 }
 
+Character::Character(std::string const& name, int lvl, int strength, int stamina, int intelligence, int spirit, int agility) : Range(CLOSE), _name(name), _lvl(lvl), _pv(100), _power(100), _strength(strength), _stamina(stamina), _intelligence(intelligence), _spirit(spirit), _agility(agility)
+{
+    std::cout << _name << " Created" << std::endl;
+}
+
 Character::~Character(){}
 
 std::string const& Character::getName() const
